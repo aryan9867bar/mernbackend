@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	{{>header}}
+</head>
+<body>
+	{{>navbar}}
+<form action="/login" method="POST">
+<div class="login-container d-flex justify-content-center align-items-center">
+	<div class="card login-form">
+		<div class="card-body">
+			<div class="d-flex flex-column">
+				<div class="u-img">
+					<img src="../../assets/images/logo.jpg" alt="">
+
+				</div>
+				<div class="username">
+					<input type="email" class="form-control" placeholder="Username" name="email">
+				</div>
+				<div class="password">
+					<input type="password" class="form-control" placeholder="Password" name="password">
+				</div>
+                <div>
+                    <input type="checkbox">Remember me
+                </div>
+				<div class="submit">
+					<img class="png" src="../../assets/images/lock.webp">
+                   <button class="btn btn-success mr-5" (click)="submit()" type="submit">login</button>
+				  <button class="btn btn-info" (click)="register()">Register</button>
+				</div>
+                <div class="fog">
+                    <a href="#" class="btn btn-link" role="button">Forgot Username/Password ?</a>
+                </div>
+			</div>
+		</div>
+	</div>
+</div> 
+
+</form>
+
+
+</body>
+</html>

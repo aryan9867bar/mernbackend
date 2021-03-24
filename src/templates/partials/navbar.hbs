@@ -1,0 +1,57 @@
+ <div class="navbar navbar-expand-lg navbar-dark bg-danger d-flex flex-row " *ngIf="finish">
+  <div>
+    <i class="ri-phone-fill mr-5">+977-412700</i>
+  </div>
+  <div>
+    <i class="ri-mail-send-line mr-5">
+      info@nationalinfotechcollege.edu.np
+      </i>
+  </div>
+  <div>
+    <li class="mr-5">Adress:Birgunj(44300),Nepal</li>
+  </div>
+  
+  <div class="icon ml-5" >
+    <i class="ri-facebook-circle-fill ml-5 mr-2"></i>
+    <i class="ri-messenger-fill mr-2"></i>
+    <i class="ri-linkedin-box-fill mr-2"></i>
+    <i class="ri-instagram-fill mr-2"></i>
+    <i class="ri-twitter-fill mr-5"></i>
+    <span (click)="close()" class="close">&times;</span>
+  </div>
+
+</div>  
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary app-navbar d-flex flex-row">
+    <div class="container-fluid">
+        <img (click)="showSidebar()" src="../../assets/images/logo.jpg" alt="">
+        
+      <ul class="navbar-nav app-brand flex-row ">
+
+        <li class="nav-item">
+          <a class="nav-link s-nav-link" routerLink="student">Students</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link s-nav-link" routerLink="course">Courses</a>
+        </li>
+        <li class="nav-item">
+          <button (click)="logout()" class="btn btn-danger">Logout</button>
+        </li>
+
+         </ul>
+       </div>
+  </nav>
+
+  <div class="main-container d-flex ">
+      <div class="sidebar" *ngIf="show" >
+        <div class="div-img">
+          <img src="../../assets/images/logo.jpg" style="height: 250px; width: 250px; border-radius: 50%;" alt="">
+        </div>
+
+        <div>
+          
+        </div>
+
+       </div> 
+  </div>
